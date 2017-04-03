@@ -1,0 +1,145 @@
+
+/* circus.css */
+
+@font-face {
+	font-family: 'Circus';
+	src: url('../police/Circus.eot');
+	src: url('../police/Circus.eot?#iefix') format('embedded-opentype'),
+		url('../police/Circus.woff') format('woff'),
+		url('../police/Circus.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+body
+{
+	background: url(../images/circus-tent-top-1207218.jpg) 100% no-repeat fixed;
+}
+
+#circus
+{
+	font-family: 'Circus';
+	color: blue;
+	text-align: center;
+	font-size: 6em;
+	margin: 0px;
+}
+
+
+header p
+{
+	text-align: center;
+	font-size: 3em;
+	color: blue;
+	margin: 0 0 15px 0;
+}
+
+.menu
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.element
+{
+	border: 5px double red;
+	width: 20%;
+	font-size: 1.7em;
+	color: blue;
+	padding: 5px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.letter
+{
+	font-family: 'Circus';
+	float: left;
+	font-size: 3em;
+	color: blue;
+
+}
+
+.section
+{
+	display: flex;
+	max-width: 75%;
+	margin: auto;
+
+}
+
+
+.contenu
+{
+	text-align: justify;
+	color: blue;
+	font-size: 1.2em;
+	
+}
+
+.image_contenu
+{
+	width: 60%;
+	float: right;
+	margin-left: 5px;
+}
+
+
+
+.contenu 
+{
+	display: none;
+}
+
+li
+{
+	list-style: none;
+}
+
+
+
+footer p
+{
+	text-align: center;
+	color: blue;
+}
+
+a
+{
+	color: blue;
+}
+
+/*pour les écrans en dessous de 1024px de large */
+
+@media all and (max-width: 1024px){
+
+body
+{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.menu
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.element
+{
+	border: 2px solid red;
+	width: 50%;
+	font-size: 1.2em;
+	color: blue;
+	padding: 5px;
+	text-align: center;
+	margin: 0 0 20px 0;
+	border-radius: 5px;
+}
+
+}
